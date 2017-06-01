@@ -7,10 +7,8 @@ def solution(A):
     return(j)
 
 
-#If the numbers is even return true. If it's odd, return false. 
-#The following symbols/commands have been disabled: %, mod
-import math
-
-
+# If the numbers is even return true. If it's odd, return false. 
+# The following symbols/commands have been disabled: %, mod
+# (Бинарные четные числа оканчиваются на 0, нечетные – на 1)
 def is_even(n):
-    return True if divmod(n, 2)[1] == 0 else False
+    return True if bin(n)[-1] == "0" else False
