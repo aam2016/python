@@ -7,4 +7,10 @@ def solution(A):
     return(j)
 
 
-print(solution(10))
+#If the numbers is even return true. If it's odd, return false. 
+#The following symbols/commands have been disabled: %, mod
+import math
+
+
+def is_even(n):
+    return True if divmod(n, 2)[1] == 0 else False
